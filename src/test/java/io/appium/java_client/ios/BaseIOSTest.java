@@ -32,7 +32,7 @@ public class BaseIOSTest {
     protected static final String DEVICE_NAME = System.getenv("deviceName") != null
             ? System.getenv("deviceName") : "iPhone X";
     protected static final String PLATFORM_VERSION = System.getenv("platformVersion") != null
-            ? System.getenv("platformVersion") : "11.4";
+            ? System.getenv("platformVersion") : "12.1";
     protected static final String BROWSER_NAME = System.getenv("browserName") != null
             ? System.getenv("browserName") : MobileBrowserType.SAFARI;
 
