@@ -32,10 +32,10 @@ public class IOSElementGenerationTest extends BaseElementGenerationTest {
             "vodqa.zip");
 
     private static final String PLATFORM_VERSION = System.getenv("platformVersion") != null
-            ? System.getenv("platformVersion") : "12.2";
+            ? System.getenv("platformVersion") : "12.0";
 
     private static final String DEVICE_NAME = System.getenv("deviceName") != null
-            ? System.getenv("deviceName") : "iPhone Xs";
+            ? System.getenv("deviceName") : "iPhone X";
 
     private Supplier<DesiredCapabilities> serverAppCapabilitiesSupplier = () -> {
         DesiredCapabilities serverCapabilities = new DesiredCapabilities();
