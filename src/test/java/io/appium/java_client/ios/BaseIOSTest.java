@@ -30,9 +30,9 @@ public class BaseIOSTest {
     protected static IOSDriver<IOSElement> driver;
     protected static final int PORT = 4723;
     protected static final String DEVICE_NAME = System.getenv("deviceName") != null
-            ? System.getenv("deviceName") : "iPhone X";
+            ? System.getenv("deviceName") : "iPhone Xs";
     protected static final String PLATFORM_VERSION = System.getenv("platformVersion") != null
-            ? System.getenv("platformVersion") : "12.1";
+            ? System.getenv("platformVersion") : "12.2";
     protected static final String BROWSER_NAME = System.getenv("browserName") != null
             ? System.getenv("browserName") : MobileBrowserType.SAFARI;
 
