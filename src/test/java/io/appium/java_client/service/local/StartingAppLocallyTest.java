@@ -40,10 +40,10 @@ import java.io.File;
 public class StartingAppLocallyTest {
 
     private static final String PLATFORM_VERSION = System.getenv("platformVersion") != null
-            ? System.getenv("platformVersion") : "11.4";
+            ? System.getenv("platformVersion") : "12.2";
 
     private static final String DEVICE_NAME = System.getenv("deviceName") != null
-            ? System.getenv("deviceName") : "iPhone X";
+            ? System.getenv("deviceName") : "iPhone Xs";
 
     @Test public void startingAndroidAppWithCapabilitiesOnlyTest() {
         File appDir = new File("src/test/java/io/appium/java_client");
