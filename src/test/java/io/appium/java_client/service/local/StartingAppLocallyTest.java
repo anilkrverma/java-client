@@ -40,7 +40,7 @@ import java.io.File;
 public class StartingAppLocallyTest {
 
     private static final String PLATFORM_VERSION = System.getenv("platformVersion") != null
-            ? System.getenv("platformVersion") : "12.0";
+            ? System.getenv("platformVersion") : "12.2";
 
     private static final String DEVICE_NAME = System.getenv("deviceName") != null
             ? System.getenv("deviceName") : "iPhone X";
