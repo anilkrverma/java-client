@@ -221,6 +221,7 @@ task xcuiTest( type: Test ) {
         exclude '**/UIAutomationTest.class'
         exclude '**/IOSScreenRecordTest.class'
         exclude '**/ImagesComparisonTest.class'
+        exclude '**/IOSContextTest.class'
     }
 }
 

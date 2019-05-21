@@ -30,11 +30,11 @@ import java.net.UnknownHostException;
 public class BaseIOSWebViewTest extends BaseIOSTest {
 
     @BeforeClass public static void beforeClass() throws UnknownHostException, MalformedURLException {
-        final String ip = startAppiumServer();
-
-        if (service == null || !service.isRunning()) {
-            throw new AppiumServerHasNotBeenStartedLocallyException("An appium server node is not started!");
-        }
+//        final String ip = startAppiumServer();
+//
+//        if (service == null || !service.isRunning()) {
+//            throw new AppiumServerHasNotBeenStartedLocallyException("An appium server node is not started!");
+//        }
 
         File appDir = new File("src/test/java/io/appium/java_client");
         File app = new File(appDir, "vodqa.zip");
@@ -44,7 +44,7 @@ public class BaseIOSWebViewTest extends BaseIOSTest {
         capabilities.setCapability(IOSMobileCapabilityType.LAUNCH_TIMEOUT, 500000);
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
-        driver = new IOSDriver<>(new URL("http://" + ip + ":" + PORT + "/wd/hub"), capabilities);
+        driver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
 
     protected void findAndSwitchToWebView() throws InterruptedException {
